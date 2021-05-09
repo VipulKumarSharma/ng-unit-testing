@@ -1,10 +1,10 @@
 import { routes } from './app-routing.module';
-import { UsersComponent } from './components/users/users.component';
+import { TodosComponent } from './components/todos/todos.component';
 
 describe('AppRoutingModule - [ INTEGRATION TEST CASES ]', () => {
 
-  it('should contain a route for /users', () => {
-    expect(routes).toContain({ path: 'users', component: UsersComponent });
+  it('should contain a route for /todos', () => {
+    expect(routes).toContain({ path: 'todos', component: TodosComponent });
   });
 
 });
