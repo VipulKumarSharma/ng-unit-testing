@@ -9,7 +9,7 @@ import { TestService } from './services/test.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'landrover-ui';
+  title = 'ng-unit-testing';
   form: FormGroup;
 
   constructor(private fb: FormBuilder, private  testService: TestService) {

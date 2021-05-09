@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "landrover-ui": {
+    "ng-unit-testing": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/landrover-ui",
+            "outputPath": "dist/ng-unit-testing",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -65,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "landrover-ui:build"
+            "browserTarget": "ng-unit-testing:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "landrover-ui:build:production"
+              "browserTarget": "ng-unit-testing:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "landrover-ui:build"
+            "browserTarget": "ng-unit-testing:build"
           }
         },
         "test": {
@@ -113,16 +113,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "landrover-ui:serve"
+            "devServerTarget": "ng-unit-testing:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "landrover-ui:serve:production"
+              "devServerTarget": "ng-unit-testing:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "landrover-ui"
+  "defaultProject": "ng-unit-testing"
 }

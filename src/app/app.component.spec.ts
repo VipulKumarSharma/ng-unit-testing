@@ -68,15 +68,15 @@ describe('AppComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it(`should have as title 'landrover-ui'`, () => {
-    expect(component.title).toEqual('landrover-ui');
+  it(`should have as title 'ng-unit-testing'`, () => {
+    expect(component.title).toEqual('ng-unit-testing');
   });
 
   it('should render title', () => {
     // fixture.detectChanges();
     const compiled = fixture.nativeElement;
     const result = compiled.querySelector('.content span').textContent;
-    expect(result).toContain('landrover-ui app is running!');
+    expect(result).toContain('ng-unit-testing app is running!');
   });
 
   it('should return 0 if input is -ve', () => {
