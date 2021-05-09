@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { TodoService } from 'src/app/services/todo.service';
+
+import { TodoService } from '../../services/todo.service';
 
 @Component({
   selector: 'app-todo',
 })
-export class TodoComponent implements OnInit {
+export class TodosComponent implements OnInit {
   todos: any[] = [];
   message: any;
 

@@ -1,15 +1,15 @@
 import { EMPTY, from, throwError } from 'rxjs';
 
-import { TodoService } from 'src/app/services/todo.service';
-import { TodoComponent } from './todo.component';
+import { TodoService } from '../../services/todo.service';
+import { TodosComponent } from './todos.component';
 
 describe('TodoComponent - [ UNIT TEST CASES ]', () => {
   let todoService: TodoService;
-  let component: TodoComponent;
+  let component: TodosComponent;
 
   beforeEach(() => {
     todoService = new TodoService(null);
-    component = new TodoComponent(todoService);
+    component = new TodosComponent(todoService);
   });
 
   it('should set todos property with the items returned from server', () => {

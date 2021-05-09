@@ -6,13 +6,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { TodosComponent } from './components/todos/todos.component';
 import { VoteComponent } from './components/vote/vote.component';
-import { TodoComponent } from './components/todo/todo.component';
 import { VoterComponent } from './components/voter/voter.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TodosComponent
   ],
   imports: [
     BrowserModule,
@@ -24,8 +25,8 @@ import { VoterComponent } from './components/voter/voter.component';
   providers: [],
   bootstrap: [
     AppComponent,
+    TodosComponent,
     VoteComponent,
-    TodoComponent,
     VoterComponent
   ]
 })
