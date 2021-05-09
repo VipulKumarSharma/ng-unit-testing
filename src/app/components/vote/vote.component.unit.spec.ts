@@ -1,7 +1,7 @@
 import { ComponentFixture, ComponentFixtureAutoDetect, TestBed } from '@angular/core/testing';
 import { VoteComponent } from './vote.component';
 
-describe('VoteComponent', () => {
+describe('VoteComponent - [ UNIT TEST CASES ]', () => {
   let component: VoteComponent;
   let fixture: ComponentFixture<VoteComponent>;
 

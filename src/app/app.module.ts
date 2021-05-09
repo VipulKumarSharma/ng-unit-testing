@@ -8,6 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { VoteComponent } from './components/vote/vote.component';
 import { TodoComponent } from './components/todo/todo.component';
+import { VoterComponent } from './components/voter/voter.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { TodoComponent } from './components/todo/todo.component';
   bootstrap: [
     AppComponent,
     VoteComponent,
-    TodoComponent
+    TodoComponent,
+    VoterComponent
   ]
 })
 export class AppModule { }
