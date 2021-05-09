@@ -20,4 +20,9 @@ export class TodoService {
   delete(id: string): Observable<any> {
     return this.http.delete('...');
   }
+
+  getTodosPromise(): Promise<any> {
+    return this.http.get('...').toPromise();
+  }
+
 }
